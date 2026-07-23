@@ -20,40 +20,7 @@ padding:24px;border-radius:12px;box-shadow:0 0 30px #0f05}
 <canvas id="c"></canvas>
 <div id="term">
 <div id="title">stevo@birthday:~$ ./birthday.exe</div><br>
-<div style="display:flex;justify-content:space-between;align-items:flex-start;gap:40px;">
-
-<div id="out"></div>
-
-<img id="photo"
-src="stevo.jpg.jpeg"
-style="width:320px;
-border:3px solid #39ff14;
-border-radius:18px;
-box-shadow:0 0 35px #39ff14;">
-
-</div>
-
-<div id="targetBox" style="display:none;position:absolute;right:60px;top:170px;text-align:center;">
-    <div style="color:#39ff14;font-size:22px;font-weight:bold;margin-bottom:10px;">
-        TARGET DETECTED
-    </div>
-
-   <div id="targetBox" style="display:none;position:absolute;right:70px;top:180px;text-align:center;">
-
-<div style="color:#39ff14;font-size:24px;font-weight:bold;margin-bottom:15px;">
-TARGET DETECTED
-</div>
-
-<img id="photo"
-src="stevo.jpg.jpeg"
-style="width:320px;
-border:3px solid #39ff14;
-border-radius:18px;
-box-shadow:0 0 35px #39ff14;">
-
-</div>
-
-<span class="cursor"></span>
+<div id="out"></div><span class="cursor"></span>
 </div>
 <script>
 const cvs=document.getElementById("c"),ctx=cvs.getContext("2d");
@@ -78,10 +45,10 @@ Build Successful ✔
 
 ====================================
 🎉 HAPPY BIRTHDAY,
-      Eng Stevooo 😍❤️❤️
+      Eng Stevooo 🎂
 ====================================
 
-Future Computer Scientist 🧑🏻‍💻💻
+Future Computer Scientist 💻
 
 May your code always compile,
 your bugs always disappear,
@@ -91,12 +58,7 @@ Have an amazing birthday! ❤️`;
 
 let i=0,out=document.getElementById("out");
 (function type(){
- if(i<msg.length){
-    out.textContent+=msg[i++];
-    setTimeout(type,35);
- }else{
-    document.getElementById("targetBox").style.display="block";
- }
+ if(i<msg.length){out.textContent+=msg[i++];setTimeout(type,35);}
 })();
 </script>
 </body>
